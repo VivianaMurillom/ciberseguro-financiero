@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="description" content="Aprende a reconocer el phishing financiero en Colombia con módulos prácticos y un simulador seguro.">
+  <title>Portal CiberSeguro Financiero Colombia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="app.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+  <header class="site-header" id="inicio">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="CiberSeguro Financiero Colombia, inicio">
+        <span class="brand-mark"><i data-lucide="shield-check" aria-hidden="true"></i></span>
+        <span>CiberSeguro <strong>Financiero</strong><small>COLOMBIA</small></span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <i data-lucide="menu" aria-hidden="true"></i>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a><a href="#modulos">Módulos</a><a href="#simulador">Simulador</a><a href="#herramientas">Herramientas</a><a href="#ayuda">Líneas de ayuda</a>
+      </nav>
+      <div class="progress-pill" aria-live="polite" aria-atomic="true">
+        <span class="progress-dot" aria-hidden="true"></span>
+        <span id="progress-summary">0/10 retos completados</span>
+        <span class="progress-divider" aria-hidden="true">|</span>
+        <span>Puntaje: <strong id="score-summary">0/100</strong></span>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero-section">
+      <div class="hero-grid page-width">
+        <div class="hero-copy">
+          <span class="eyebrow"><i data-lucide="lock-keyhole" aria-hidden="true"></i> Aprende. Verifica. Protege.</span>
+          <h1>Que no te roben lo que tanto te cuesta <span>construir.</span></h1>
+          <p class="hero-lede">Entrena para reconocer engaños financieros y proteger tus cuentas de Nequi, Daviplata, PSE y tu banco. Sin tecnicismos, paso a paso.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#simulador">Iniciar simulador de retos <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+            <a class="button button-secondary" href="#webinars"><i data-lucide="play-circle" aria-hidden="true"></i> Ver webinars</a>
+          </div>
+          <div class="trust-line"><i data-lucide="check-circle-2" aria-hidden="true"></i> Gratis, a tu ritmo y sin pedir claves</div>
+        </div>
+        <div class="hero-visual" aria-label="Ilustración de seguridad financiera">
+          <div class="visual-glow"></div>
+          <div class="security-card">
+            <div class="security-card-top"><span class="live-indicator"></span> TU SEGURIDAD, PRIMERO <i data-lucide="more-horizontal" aria-hidden="true"></i></div>
+            <div class="shield-illustration"><i data-lucide="shield-check" aria-hidden="true"></i></div>
+            <h2>Decide con confianza</h2>
+            <p>Una pausa antes de hacer clic puede proteger tu dinero.</p>
+            <div class="security-check"><i data-lucide="circle-check" aria-hidden="true"></i> Verifica quién te escribe</div>
+            <div class="security-check"><i data-lucide="circle-check" aria-hidden="true"></i> Nunca compartas tus códigos</div>
+          </div>
+          <div class="floating-tag tag-top"><i data-lucide="scan-eye" aria-hidden="true"></i> Revisa el enlace</div>
+          <div class="floating-tag tag-bottom"><i data-lucide="badge-check" aria-hidden="true"></i> Tu dinero, bajo tu control</div>
+        </div>
+      </div>
+      <div class="stats-wrap page-width">
+        <div class="stat-card"><span class="stat-icon amber"><i data-lucide="triangle-alert" aria-hidden="true"></i></span><div><strong>99 millones*</strong><span>de intentos de ataque al año</span></div></div>
+        <div class="stat-card"><span class="stat-icon blue"><i data-lucide="activity" aria-hidden="true"></i></span><div><strong>273.000*</strong><span>intentos al día, en promedio</span></div></div>
+        <p class="stat-note">*Cifras de referencia solicitadas para esta experiencia; valida fuente y periodo antes de citarlas como estadísticas oficiales.</p>
+      </div>
+    </section>
+
+    <section class="section page-width" id="modulos">
+      <div class="section-heading">
+        <div><span class="eyebrow eyebrow-light">APRENDE A TU RITMO</span><h2>Pequeños hábitos. <span>Gran protección.</span></h2></div>
+        <p>Completa estas guías breves y lleva lo aprendido al simulador.</p>
+      </div>
+      <div class="module-grid">
+        <article class="module-card">
+          <div class="module-icon icon-amber"><i data-lucide="message-square-warning" aria-hidden="true"></i></div><span class="module-label">01 · MENSAJES</span>
+          <h3>Detecta SMS engañosos</h3><p>Reconoce la urgencia falsa, los premios inesperados y los enlaces que buscan robar tus datos.</p>
+          <button class="text-action module-complete" type="button" data-module="sms">Marcar guía como leída <i data-lucide="arrow-up-right" aria-hidden="true"></i></button>
+        </article>
+        <article class="module-card">
+          <div class="module-icon icon-purple"><i data-lucide="smartphone-nfc" aria-hidden="true"></i></div><span class="module-label">02 · SUPLANTACIÓN</span>
+          <h3>Nequi, Daviplata y PSE</h3><p>Aprende a identificar páginas falsas y solicitudes de pago o verificación inesperadas.</p>
+          <button class="text-action module-complete" type="button" data-module="impostors">Marcar guía como leída <i data-lucide="arrow-up-right" aria-hidden="true"></i></button>
+        </article>
+        <article class="module-card">
+          <div class="module-icon icon-green"><i data-lucide="fingerprint" aria-hidden="true"></i></div><span class="module-label">03 · ACCESO SEGURO</span>
+          <h3>Activa MFA y usa claves únicas</h3><p>Refuerza tus cuentas con verificación en dos pasos y un gestor de contraseñas confiable.</p>
+          <button class="text-action module-complete" type="button" data-module="mfa">Marcar guía como leída <i data-lucide="arrow-up-right" aria-hidden="true"></i></button>
+        </article>
+        <article class="module-card">
+          <div class="module-icon icon-blue"><i data-lucide="globe-lock" aria-hidden="true"></i></div><span class="module-label">04 · NAVEGACIÓN</span>
+          <h3>Comprueba el sitio web</h3><p>El candado cifra la conexión, pero no garantiza que el sitio sea legítimo. Revisa el dominio completo.</p>
+          <button class="text-action module-complete" type="button" data-module="https">Marcar guía como leída <i data-lucide="arrow-up-right" aria-hidden="true"></i></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="simulator-section" id="simulador">
+      <div class="page-width simulator-layout">
+        <div class="simulator-intro">
+          <span class="eyebrow"><i data-lucide="scan-search" aria-hidden="true"></i> ZONA DE PRÁCTICA</span>
+          <h2>¿Real o <span>engaño?</span></h2>
+          <p>Observa cada caso con calma. Busca señales sospechosas antes de decidir: no hay consecuencias, solo aprendizaje.</p>
+          <div class="simulator-tip"><i data-lucide="lightbulb" aria-hidden="true"></i><span><strong>Consejo:</strong> Nunca uses enlaces recibidos para entrar a tu banco. Abre la app oficial o escribe la dirección tú mismo.</span></div>
+          <div class="quiz-progress-label"><span>Progreso del simulador</span><strong id="scenario-counter">Cargando casos…</strong></div>
+          <div class="quiz-progress-track"><span id="quiz-progress-bar"></span></div>
+        </div>
+        <div class="challenge-card" id="challenge-card" aria-live="polite">
+          <div class="challenge-topline"><span class="message-type" id="scenario-type">SIMULADOR SEGURO</span><span class="scenario-number" id="scenario-number">Preparando…</span></div>
+          <div class="message-preview">
+            <div class="message-sender"><span class="sender-avatar" id="sender-avatar">?</span><div><strong id="scenario-sender">Cargando escenario</strong><small id="scenario-channel">Mensaje simulado</small></div><i data-lucide="ellipsis" aria-hidden="true"></i></div>
+            <p id="scenario-message">Los escenarios aparecerán aquí.</p>
+            <div class="fake-link" id="scenario-link" hidden><i data-lucide="link-2" aria-hidden="true"></i><span></span></div>
+          </div>
+          <p class="decision-label" id="decision-label">¿Qué harías si recibieras este mensaje?</p>
+          <div class="decision-buttons" id="decision-buttons">
+            <button class="button decision-button danger-button" id="choose-phishing" type="button"><i data-lucide="shield-alert" aria-hidden="true"></i> Es un engaño</button>
+            <button class="button decision-button safe-button" id="choose-safe" type="button"><i data-lucide="circle-check" aria-hidden="true"></i> Es un mensaje seguro</button>
+          </div>
+          <div class="feedback-panel" id="feedback-panel" hidden role="status" aria-live="polite">
+            <div class="feedback-heading"><span id="feedback-icon"></span><div><strong id="feedback-title"></strong><small id="feedback-result"></small></div></div>
+            <p id="feedback-explanation"></p>
+            <ul id="feedback-signals"></ul>
+            <button class="button button-primary next-button" id="next-scenario" type="button">Siguiente reto <i data-lucide="arrow-right" aria-hidden="true"></i></button>
+          </div>
+          <div class="loading-error" id="scenario-error" hidden role="alert"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tools-section page-width" id="herramientas">
+      <div class="section-heading">
+        <div><span class="eyebrow eyebrow-light">CAJA DE HERRAMIENTAS</span><h2>Protección que puedes <span>activar hoy.</span></h2></div>
+        <p>Acciones sencillas que dificultan el acceso no autorizado a tus cuentas.</p>
+      </div>
+      <div class="tools-grid">
+        <article class="tool-card"><div class="tool-icon"><i data-lucide="key-round" aria-hidden="true"></i></div><h3>Claves diferentes</h3><p>Usa contraseñas únicas y largas. Un gestor confiable te ayuda a guardarlas sin repetirlas.</p></article>
+        <article class="tool-card"><div class="tool-icon"><i data-lucide="fingerprint" aria-hidden="true"></i></div><h3>Verificación adicional</h3><p>Activa MFA, biometría o notificaciones de acceso desde los ajustes de cada servicio.</p></article>
+        <article class="tool-card"><div class="tool-icon"><i data-lucide="phone-call" aria-hidden="true"></i></div><h3>Confirma por otro canal</h3><p>Si un mensaje te preocupa, contacta a la entidad desde su app o número oficial, nunca desde el mensaje.</p></article>
+      </div>
+    </section>
+
+    <section class="webinar-band" id="webinars">
+      <div class="page-width webinar-inner"><div class="webinar-icon"><i data-lucide="video" aria-hidden="true"></i></div><div><span class="eyebrow">APRENDE EN COMUNIDAD</span><h2>Webinars y recursos para seguir aprendiendo</h2><p>Consulta los canales oficiales de tu banco y de las entidades de protección al consumidor financiero para encontrar jornadas y materiales actualizados.</p></div><a class="button button-secondary" href="#ayuda">Ver recursos <i data-lucide="arrow-right" aria-hidden="true"></i></a></div>
+    </section>
+
+    <section class="help-section page-width" id="ayuda">
+      <div class="section-heading">
+        <div><span class="eyebrow eyebrow-light">SI ALGO NO CUADRA, REPÓRTALO</span><h2>Canales de ayuda <span>oficiales.</span></h2></div>
+        <p>No respondas ni reenvíes el enlace sospechoso. Contacta directamente a la entidad.</p>
+      </div>
+      <div class="help-grid">
+        <a class="help-card" href="https://caivirtual.policia.gov.co/" target="_blank" rel="noopener noreferrer"><span class="help-icon"><i data-lucide="shield" aria-hidden="true"></i></span><span><strong>CAI Virtual · Policía Nacional</strong><small>Orientación y reporte de incidentes digitales</small></span><i data-lucide="external-link" aria-hidden="true"></i></a>
+        <a class="help-card" href="https://www.superfinanciera.gov.co/" target="_blank" rel="noopener noreferrer"><span class="help-icon"><i data-lucide="landmark" aria-hidden="true"></i></span><span><strong>Superintendencia Financiera</strong><small>Información y atención al consumidor financiero</small></span><i data-lucide="external-link" aria-hidden="true"></i></a>
+        <div class="help-reminder"><i data-lucide="phone-forwarded" aria-hidden="true"></i><div><strong>¿Compartiste una clave o código?</strong><p>Comunícate de inmediato con tu entidad financiera por su canal oficial y solicita bloquear el acceso.</p></div></div>
+      </div>
+    </section>
+
+    <section class="privacy-banner" aria-label="Aviso de privacidad">
+      <div class="page-width privacy-inner"><span class="privacy-icon"><i data-lucide="user-round-check" aria-hidden="true"></i></span><div><strong>Tu privacidad es parte de tu seguridad.</strong><p>Plataforma 100% educativa. No recolectamos contraseñas ni datos personales reales. Todos los escenarios son simulados; tu progreso se mantiene solo en este navegador.</p></div><span class="privacy-tag">PRIVACIDAD POR DISEÑO</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="page-width footer-inner"><a class="brand footer-brand" href="#inicio"><span class="brand-mark"><i data-lucide="shield-check" aria-hidden="true"></i></span><span>CiberSeguro <strong>Financiero</strong><small>COLOMBIA</small></span></a><p>Contenido educativo. No sustituye la orientación oficial de tu entidad financiera.</p><a href="#inicio">Volver arriba ↑</a></div></footer>
+
+  <dialog class="certificate-dialog" id="certificate-dialog" aria-labelledby="certificate-heading">
+    <button class="dialog-close" type="button" data-close-dialog aria-label="Cerrar certificado"><i data-lucide="x" aria-hidden="true"></i></button>
+    <div class="certificate-content" id="certificate-content">
+      <div class="certificate-seal"><i data-lucide="award" aria-hidden="true"></i></div>
+      <span class="eyebrow eyebrow-light">¡RETO COMPLETADO!</span>
+      <h2 id="certificate-heading">Certificado de Usuario Digital Seguro</h2>
+      <p>Por completar los retos de capacitación y demostrar buenas prácticas para reconocer intentos de phishing financiero.</p>
+      <label for="certificate-name">Nombre para el certificado <span>(opcional, se procesa solo en esta página)</span></label>
+      <input id="certificate-name" type="text" maxlength="60" autocomplete="off" placeholder="Escribe tu nombre" aria-describedby="name-privacy-note">
+      <small id="name-privacy-note">No se envía ni se guarda. Déjalo en blanco para usar “Usuario/a”.</small>
+      <div class="certificate-meta"><span>Fecha: <strong id="certificate-date"></strong></span><span>Puntaje: <strong id="certificate-score"></strong></span></div>
+      <button class="button button-primary print-button" id="print-certificate" type="button"><i data-lucide="printer" aria-hidden="true"></i> Imprimir o guardar como PDF</button>
+    </div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

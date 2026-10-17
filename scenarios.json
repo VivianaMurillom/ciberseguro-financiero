@@ -1,0 +1,98 @@
+[
+  {
+    "id": "sms-suspension",
+    "type": "SMS · SUPLANTACIÓN",
+    "sender": "Aviso de cuenta",
+    "channel": "Mensaje de texto · Simulación",
+    "message": "Tu cuenta será suspendida hoy. Confirma tus datos para evitar el bloqueo inmediato.",
+    "link": "https://nequi-verificacion.example/ingresar",
+    "isPhishing": true,
+    "explanation": "Es un intento de phishing. El mensaje inventa una urgencia y el dominio no corresponde a un canal oficial. No abras el enlace ni ingreses información.",
+    "signals": [
+      "Amenaza de suspensión inmediata para presionarte.",
+      "Dominio desconocido que imita el nombre de un servicio.",
+      "Los bancos y billeteras no deben pedirte claves o códigos por un enlace de SMS."
+    ],
+    "safeAction": "Abre la aplicación oficial desde tu teléfono y verifica allí."
+  },
+  {
+    "id": "pse-refund",
+    "type": "PSE · PAGO FALSO",
+    "sender": "Reembolso PSE",
+    "channel": "Mensaje de texto · Simulación",
+    "message": "Tienes un reembolso pendiente. Ingresa el código de un solo uso para recibirlo ahora.",
+    "link": "https://pse-reembolso.example/confirmar",
+    "isPhishing": true,
+    "explanation": "Es un engaño. Un supuesto reembolso no justifica entregar un código de un solo uso. Ese código puede permitir que otra persona autorice una operación.",
+    "signals": [
+      "Promesa de dinero inesperado con límite de tiempo.",
+      "Pide un código de autenticación fuera del flujo que iniciaste.",
+      "El enlace usa un dominio de ejemplo, no un portal oficial."
+    ],
+    "safeAction": "No compartas el código. Consulta la transacción desde el sitio o la app oficial."
+  },
+  {
+    "id": "daviplata-prize",
+    "type": "DAVIPLATA · PREMIO FALSO",
+    "sender": "Beneficio para ti",
+    "channel": "Mensaje de texto · Simulación",
+    "message": "¡Ganaste un bono! Para reclamarlo, registra tu número de tarjeta y la clave de tu billetera.",
+    "link": "https://bono-daviplata.example/reclamar",
+    "isPhishing": true,
+    "explanation": "Es phishing. Los premios inesperados suelen usarse como gancho para obtener datos financieros. Ninguna promoción legítima necesita tu clave de acceso.",
+    "signals": [
+      "Premio no solicitado.",
+      "Solicita una clave financiera para entregar el supuesto beneficio.",
+      "La dirección no es un canal oficial."
+    ],
+    "safeAction": "Busca promociones escribiendo tú mismo la dirección oficial o dentro de la app."
+  },
+  {
+    "id": "bank-receipt",
+    "type": "BANCO · AVISO INFORMATIVO",
+    "sender": "Notificación de tu app bancaria",
+    "channel": "Notificación dentro de la aplicación · Simulación",
+    "message": "Compra aprobada por $24.900 en COMERCIO DEMO. Si no reconoces el movimiento, abre la app oficial para revisar y reportar la operación. Este aviso no incluye enlaces ni solicita códigos.",
+    "link": null,
+    "isPhishing": false,
+    "explanation": "Este aviso simulado no pide que respondas, compartas una clave o abras un enlace. Aun así, las notificaciones pueden falsificarse: comprueba el movimiento entrando por tu cuenta a la app oficial.",
+    "signals": [
+      "No incluye un enlace externo ni solicita credenciales.",
+      "La recomendación es abrir la aplicación por separado.",
+      "Si no reconoces la compra, contacta al banco desde un canal oficial."
+    ],
+    "safeAction": "Verifica el movimiento en la app oficial; no uses datos de contacto de mensajes dudosos."
+  },
+  {
+    "id": "nequi-security",
+    "type": "BILLETERA · ALERTA DE SEGURIDAD",
+    "sender": "Alerta en la app",
+    "channel": "Notificación dentro de la aplicación · Simulación",
+    "message": "Se activó la verificación biométrica que configuraste desde los ajustes de seguridad. Si no hiciste este cambio, entra directamente a la app y comunícate con soporte desde allí. No respondas a este aviso.",
+    "link": null,
+    "isPhishing": false,
+    "explanation": "En este escenario de práctica, el aviso informa sobre un cambio iniciado por la persona usuaria y no solicita datos ni conduce a un enlace. Si tú no hiciste el cambio, trátalo como una alerta y verifica directamente en la app.",
+    "signals": [
+      "El escenario indica que el cambio fue iniciado desde los ajustes.",
+      "No pide claves, token ni datos de tarjeta.",
+      "Una alerta inesperada debe verificarse desde la app oficial, no respondiendo al mensaje."
+    ],
+    "safeAction": "Confirma si tú hiciste el cambio. Si no, usa el soporte oficial dentro de la app."
+  },
+  {
+    "id": "bancolombia-token",
+    "type": "BANCOS · ROBO DE TOKEN",
+    "sender": "Asesor de seguridad",
+    "channel": "Llamada o chat inesperado · Simulación",
+    "message": "Soy del área de seguridad. Para cancelar una transferencia sospechosa, dime el código que acaba de llegar a tu celular. No cuelgues o perderás el dinero.",
+    "link": null,
+    "isPhishing": true,
+    "explanation": "Es una señal clara de fraude. Un código de un solo uso sirve para autorizar o recuperar el acceso: nunca lo compartas, ni siquiera con alguien que afirma ser del banco.",
+    "signals": [
+      "Solicita un token recibido en tu teléfono.",
+      "Usa presión y miedo para evitar que verifiques.",
+      "La identidad del remitente o interlocutor puede ser falsificada."
+    ],
+    "safeAction": "Cuelga y llama al número publicado en la tarjeta o en el sitio oficial del banco."
+  }
+]
